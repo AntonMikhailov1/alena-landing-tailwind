@@ -6,18 +6,18 @@ function Header() {
   const [top, setTop] = useState(true);
 
   // detect whether user has scrolled the page down by 10px 
-  // useEffect(() => {
-  //   const scrollHandler = () => {
-  //     window.scrollY > 10 ? setTop(false) : setTop(true)
-  //   };
-  //   window.addEventListener('scroll', scrollHandler);
-  //   return () => window.removeEventListener('scroll', scrollHandler);
-  // }, [top]);  
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.scrollY > 10 ? setTop(false) : setTop(true)
+    };
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [top]);  
 
   return (
-    <header className={`fixed w-full z-30 text-gray-700 tracking-wider md:bg-opacity-90 transition duration-300 ease-in-out}`}>
-      <div className="max-w-6xl border-b border-slate-300 mx-auto px-5 sm:px-6">
-        <div className="flex items-center justify-center h-80 md:h-10">
+    <header className={`fixed w-full z-30 text-gray-700 tracking-wider md:bg-opacity-90 transition duration-300 ease-in-out} ${!top && 'backdrop-blur-sm shadow-lg'}`}>
+      <div className={`max-w-6xl border-b border-gray-200 mx-auto px-5 sm:px-6 ${!top && 'border-b-0'}`}>
+        <div className="flex items-center justify-center h-10">
           <nav className="flex flex-grow items-center justify-center">
             <ul className="flex flex-grow flex-wrap items-center justify-center gap-x-8">
               <li>

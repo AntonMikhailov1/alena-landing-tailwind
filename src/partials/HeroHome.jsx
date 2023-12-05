@@ -57,23 +57,23 @@ function HeroHome() {
         </svg>*/}
       </div> 
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto h-screen px-4 sm:px-6">
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="pb-12 md:pb-16">
+          <div className="text-end pb-12 md:pb-16">
             <h1
-              className="text-5xl md:text-6xl font-extralight leading-tighter tracking-tighter mb-4"
+              className="text-5xl md:text-6xl font-light leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
               Фотограф
-              <p className="bg-clip-text text-transparent font-light bg-gradient-to-r from-blue-500 to-teal-400">
+              <p className="bg-clip-text text-transparent font-light bg-gradient-to-r from-slate-700 to-gray-700">
                 Алена Михайлова
               </p>
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
-                className="text-xl text-gray-600 mb-8"
+                className="text-xl text-teal-400 mb-8"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
