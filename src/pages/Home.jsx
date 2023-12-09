@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import About from '../partials/About';
+import Portfolio from '../partials/Portfolio';
 import Footer from '../partials/Footer';
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <About />
-
+        <Portfolio />
       </main>
       {/*  Site footer */}
       <Footer />
