@@ -11,7 +11,7 @@ function About() {
               <img
                 src={meImage}
                 alt=""
-                className="relative z-40 object-cover w-full h-[38rem] rounded-md z-0 "
+                className="relative z-40 object-cover w-full h-[38rem] rounded-md z-1 "
               />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">

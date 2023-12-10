@@ -8,7 +8,7 @@ import Footer from '../partials/Footer';
 
 function Home() {
   return (
-    <div className="flex flex-col text-gray-900 min-h-screen overflow-hidden bg-amber-50 font-light">
+    <div className="flex flex-col text-gray-900 min-h-screen overflow-hidden bg-gradient-to-b from-indigo-100 via-pink-100/50 to-cyan-100/50 font-light">
 
       {/*  Site header */}
       <Header />
